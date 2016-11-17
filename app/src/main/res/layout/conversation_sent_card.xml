@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!--<android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardElevation="0dp">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+           <RelativeLayout
+                android:id="@+id/rl_mesg_wrapper_conversation"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+               <!-- <TextView
+                    android:id="@+id/msg_sender_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rl_user_icon"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/user_image_view"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/round_background"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/user_icon_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="25sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/ll_msg_conversation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/rl_user_icon"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:background="@drawable/message_sent"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="40dp">
+
+                    <TextView
+                        android:id="@+id/msg_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/msg_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/msg_text"
+                        android:layout_alignParentBottom="true"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+</LinearLayout>

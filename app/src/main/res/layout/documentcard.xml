@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2dp" >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/doc_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/doc_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/download_grey"
+                android:padding="10dp"
+                android:background="@drawable/round_color"
+                android:scaleType="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/doc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/ColorPrimary"
+                android:background="#1A000000"
+                android:singleLine="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/documents_progressBar"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/grp1">
+        <item
+            android:id="@+id/navigation_tasks"
+            android:checked="true"
+            android:icon="@drawable/menu_task"
+            android:title="Tasks"/>
+        <item
+            android:id="@+id/navigation_forms"
+            android:icon="@drawable/menu_form"
+            android:title="Forms"/>
+
+        <item
+            android:id="@+id/navigation_chat"
+            android:icon="@drawable/menu_chat"
+            android:title="Chat"/>
+
+        <item
+            android:id="@+id/navigation_notifications"
+            android:icon="@drawable/menu_notifications"
+            android:title="Notifications"/>
+
+        <item
+            android:id="@+id/navigation_documents"
+            android:icon="@drawable/menu_documents"
+            android:title="Documents"/>
+    </group>
+
+
+
+    <group android:checkableBehavior="none" android:id="@+id/grp2">
+        <item
+            android:id="@+id/navigation_settings"
+            android:icon="@drawable/menu_settings"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/navigation_feedback"
+            android:icon="@drawable/menu_feedback"
+            android:title="Feedback"/>
+
+        <item
+            android:id="@+id/navigation_logout"
+            android:icon="@drawable/menu_logout"
+            android:title="Logout"/>
+
+    </group>
+
+</menu>
